@@ -1,0 +1,27 @@
+# IDE / OS
+.idea/
+*.iml
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Build
+backend/target/
+backend/*.txt
+*.class
+*.jar
+*.war
+*.log
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+!.env.prod.example
+!frontend/.env.development
+!frontend/.env.production
+
+# Docker volumes (local)
+ca_mysql_data/
+
+backups/

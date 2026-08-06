@@ -1,0 +1,26 @@
+# Production profile extras
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      show-details: never
+
+springdoc:
+  api-docs:
+    enabled: false
+  swagger-ui:
+    enabled: false
+
+logging:
+  level:
+    root: WARN
+    in.ac.iiitb.ca: INFO
+    org.springframework.security: WARN
+
+server:
+  error:
+    include-message: never
+    include-stacktrace: never
